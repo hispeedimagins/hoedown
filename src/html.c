@@ -373,7 +373,7 @@ rndr_image(hoedown_buffer *ob, const hoedown_buffer *link, const hoedown_buffer 
 	hoedown_html_renderer_state *state = data->opaque;
 	if (!link || !link->size) return 0;
 
-	HOEDOWN_BUFPUTSL(ob, "<img style"max-width: 100%;" src=\"");
+	HOEDOWN_BUFPUTSL(ob, "<img style=\"max-width:100%;" src=\"");
 	escape_href(ob, link->data, link->size);
 	HOEDOWN_BUFPUTSL(ob, "\" alt=\"");
 
